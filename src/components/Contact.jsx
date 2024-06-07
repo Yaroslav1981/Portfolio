@@ -34,15 +34,15 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
    emailjs.send(
-    process.env.SERVICE_KEY,
-    process.env.TEMPLATE_KEY,
+    "service_lg3arxr",
+    "template_c3y73wp",
    {
     from_name: form.name,
     to_name: "Jarosław",
     from_email:form.email,
     to_email: "kyaraslav@gmail.com",
     message:form.message,
-   },process.env.PUBLIC_KEY)
+   },"4LqHh0hihs5zQsH8O")
    .then(()=>{
     setLoading(false);
     alert("Thank you! I will get back to you as soon as possible.")
