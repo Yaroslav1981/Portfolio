@@ -10,11 +10,7 @@ import { slideIn } from '../utils/motion';
 //template_c3y73wp
 
 //4LqHh0hihs5zQsH8O
-// const logData = {
-//     service_id: 'service_lg3arxr',
-//     template_id: 'template_c3y73wp',
-//     user_id: '4LqHh0hihs5zQsH8O',
-// }
+
 
 
 
@@ -38,15 +34,15 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
    emailjs.send(
-    "service_lg3arxr",
-    "template_c3y73wp",
+    process.env.SERVICE_KEY,
+    process.env.TEMPLATE_KEY,
    {
     from_name: form.name,
     to_name: "Jarosław",
     from_email:form.email,
     to_email: "kyaraslav@gmail.com",
     message:form.message,
-   },"4LqHh0hihs5zQsH8O")
+   },process.env.PUBLIC_KEY)
    .then(()=>{
     setLoading(false);
     alert("Thank you! I will get back to you as soon as possible.")
