@@ -11,7 +11,7 @@ import CanvasLoader from "../Loader";
 const Ball = ({icon}) => {
   const [decal] = useTexture([icon]);
   return (
-    <Float speed={5} rotationIntensity={1} floatIntensity={2} >
+    <>
       <ambientLight intensity={0.25}/>
       <directionalLight position={[0,0,0.05]} />
       {/* <spotLight position={[-5,5,2]} angle={3} penumbra={1} intensity={400} castShadow shadow-mapSize={1024}/> */}
@@ -31,24 +31,21 @@ const Ball = ({icon}) => {
           flatShading
         />
       </mesh>
-    </Float>
+    </>
   )
 }
 
 const BallCanvas = ({icon})=>{
   return(
     <Canvas
-    frameloop='demand'
+    frameloop='always'
     gl={{preserveDrawingBuffer: true}}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls 
-        autoRotate={true}
-        autoRotateSpeed={4}
-        minPolarAngle={Math.PI / 2}
-        maxPolarAngle={Math.PI/ 2}
-        enableZoom={false}/>
-        <Ball icon={icon}/>
+        <OrbitControls enableZoom={false}/>
+        <Float  rotationIntensity={1.2} floatIntensity={1.7} speed={4}>
+          <Ball icon={icon}/>
+        </Float>
       </Suspense>
       <Preload all/>
     </Canvas>

@@ -1,4 +1,5 @@
 import {
+   postgredb,
     mobile,
     backend,
     creator,
@@ -29,10 +30,10 @@ import {site3d, recognitionApp} from "../assets/works"
       id: "about",
       title: "About",
     },
-    {
-      id: "work",
-      title: "Work",
-    },
+    // {
+    //   id: "work",
+    //   title: "Work",
+    // },
     {
       id:"technologies",
       title: "Techologies",
@@ -45,10 +46,10 @@ import {site3d, recognitionApp} from "../assets/works"
       id: "contact",
       title: "Contact",
     },
-    {
-      id:"socials",
-      title: "Socials",
-    }
+    // {
+    //   id:"socials",
+    //   title: "Socials",
+    // }
   ];
   
   const services = [
@@ -91,10 +92,10 @@ import {site3d, recognitionApp} from "../assets/works"
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -103,13 +104,17 @@ import {site3d, recognitionApp} from "../assets/works"
       name: "Node JS",
       icon: nodejs,
     },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
     {
       name: "Three JS",
       icon: threejs,
+    },
+    {
+      name: "Postgre DB",
+      icon: postgredb,
     },
     {
       name: "git",
@@ -119,10 +124,10 @@ import {site3d, recognitionApp} from "../assets/works"
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
@@ -228,7 +233,7 @@ import {site3d, recognitionApp} from "../assets/works"
     {
       name: "Face Recognition App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A robust face recognition web application utilizing Node.js for server-side logic and PostgreSQL for database management. The app integrates the Clarifai API to accurately detect and recognize faces in user-uploaded images. ",
       tags: [
         {
           name: "postgre db",
