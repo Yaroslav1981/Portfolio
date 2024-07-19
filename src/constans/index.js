@@ -20,10 +20,11 @@ import {
     starbucks,
     tesla,
     shopify,
-    tripguide,
+
     threejs,
+    sass,
   } from "../assets";
-import {site3d, recognitionApp} from "../assets/works"
+import {site3d, recognitionApp, tictac, staticSite} from "../assets/works"
 
   export const navLinks = [
     {
@@ -83,6 +84,10 @@ import {site3d, recognitionApp} from "../assets/works"
     {
       name: "JavaScript",
       icon: javascript,
+    },
+    {
+      name: "Sass",
+      icon: sass,
     },
     {
       name: "TypeScript",
@@ -214,23 +219,6 @@ import {site3d, recognitionApp} from "../assets/works"
   
   const projects = [
     {
-      name: "3d Site",
-      description:
-        "3D site that made only using css and html",
-      tags: [
-        {
-          name: "html",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
-          color: "green-text-gradient",
-        },
-      ],
-      image: site3d,
-      source_code_link: "https://yaroslav1981.github.io/Site3D/",
-    },
-    {
       name: "Face Recognition App",
       description:
         "A robust face recognition web application utilizing Node.js for server-side logic and PostgreSQL for database management. The app integrates the Clarifai API to accurately detect and recognize faces in user-uploaded images. ",
@@ -249,28 +237,66 @@ import {site3d, recognitionApp} from "../assets/works"
         },
       ],
       image: recognitionApp,
-      source_code_link: "https://yaroslav1981.github.io/FaceRecognitionApp",
+      source_code_link: "https://recognitionappv2.onrender.com/",
     },
     {
-      name: "Trip Guide",
+      name: "TicTac Game",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Simple Tic Tac game with some animations",
       tags: [
         {
-          name: "nextjs",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "react",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: tictac,
+      source_code_link: "https://yaroslav1981.github.io/TicTac_Game/",
+    },
+    {
+      name: "3d Site",
+      description:
+        "3D site that made only using css and html",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+      ],
+      image: site3d,
+      source_code_link: "https://yaroslav1981.github.io/Site3D/",
+    },
+    {
+      name: "Static Site",
+      description:
+        "Static site for bissnes purposes",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "sass",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: staticSite,
+      source_code_link: "https://yaroslav1981.github.io/project1.1/",
     },
   ];
   

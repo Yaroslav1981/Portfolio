@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import sass from "./tech/sass.png";
 import css from "./tech/css.png";
 import postgredb from "./tech/postgredb.png";
 import docker from "./tech/docker.png";
@@ -28,8 +28,6 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
   postgredb,
@@ -58,6 +56,5 @@ export {
   shopify,
   starbucks,
   tesla,
-  jobit,
-  tripguide,
-};
+  sass
+ };
